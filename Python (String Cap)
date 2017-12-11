@@ -1,0 +1,6 @@
+How to cap all words in a string (Like Jaden Smith Twitter posts)
+*******************************************************************************************************************************************
+import string
+
+def toJadenCase(x):    
+return (string.capwords(x))
