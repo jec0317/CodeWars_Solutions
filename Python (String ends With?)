@@ -1,0 +1,10 @@
+//This checks if the STRING ends with the characters ENDING
+
+***********************************************************************************************************************************
+
+def solution(string, ending):
+if string[-(len(ending)):] == ending: 
+check = True
+else:   
+check = False 
+return check
