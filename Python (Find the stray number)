@@ -1,0 +1,14 @@
+You are given an odd-length array of integers, in which all of them are the same, except for one single number.
+Implement the method stray which accepts such array, and returns that single different number.
+The input array will always be valid! (odd-length >= 3)
+
+
+******************************************************************************************************************************************
+
+def stray(arr): 
+for i in range(0,len(arr)):   
+  if arr[i] != arr[i+1]:        
+    if arr[i+1] == arr[i-1]:            
+      return arr[i]         
+    else:              
+      return arr[i+1]
